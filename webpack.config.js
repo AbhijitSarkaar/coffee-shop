@@ -7,6 +7,19 @@ module.exports = {
     path: path.resolve(__dirname, "./public/build"),
     filename: "bundle.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: "babel-loader",
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackplugin({
       template: "./src/template.html",
