@@ -1,0 +1,17 @@
+{
+  "name": "coffee-shop",
+  "version": "1.0.0", 
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.development.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
+  }
+}
