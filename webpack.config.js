@@ -3,10 +3,6 @@ const HtmlWebpackplugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
   module: {
     rules: [
       {
@@ -18,12 +14,22 @@ module.exports = {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.jpg$/,
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
     new HtmlWebpackplugin({
       template: "./src/template.html",
-      filename: path.resolve(__dirname, "dist/index.html"),
+      filename: "index.html",
     }),
   ],
+  resolve: {
+    alias: {
+      images: path.resolve(__dirname, "images"),
+      "~": path.resolve(__dirname, 'src')
+    },
+  },
 };
