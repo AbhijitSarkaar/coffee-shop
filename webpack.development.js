@@ -10,6 +10,9 @@ module.exports = merge(
       filename: "bundle.js",
       clean: true,
     },
+    devServer: {
+      static: ["images"],
+    },
   },
   config
 );
