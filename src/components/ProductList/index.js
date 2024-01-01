@@ -3,7 +3,6 @@ import Product from "~/components/Product";
 import "./index.scss";
 
 const ProductList = ({ products }) => {
-  console.log(products);
   return (
     <>
       <section className="products">

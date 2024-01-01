@@ -13,7 +13,7 @@ const Homepage = () => {
     <>
       <section className="app-container">
         <section className="hero-banner">
-          <img src="./hero-banner.jpg" />
+          <img src="hero-banner.jpg" />
         </section>
         <section className="body-content">
           <section className="header-text">
