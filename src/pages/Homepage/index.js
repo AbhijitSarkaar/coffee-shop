@@ -16,10 +16,10 @@ const Homepage = () => {
           <img src="./hero-banner.jpg" />
         </section>
         <section className="body-content">
-          {/* <section className="header-text">
+          <section className="header-text">
             <p className="title">{title}</p>
             <p className="description">{desc}</p>
-          </section> */}
+          </section>
           {/* <section className="filter-buttons"></section> */}
           <ProductList products={products} />
         </section>
