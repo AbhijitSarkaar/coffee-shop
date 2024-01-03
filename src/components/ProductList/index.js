@@ -2,7 +2,10 @@ import React from "react";
 import Product from "~/components/Product";
 import "./index.scss";
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products, tab }) => {
+  if (tab === "available")
+    products = products.filter((product) => !product.sold_out);
+
   return (
     <>
       <section className="products">

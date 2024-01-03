@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./index.scss";
 import ProductList from "~/components/ProductList";
 import products from "~/data/products";
+import Filter from "~/components/Filter";
 
 const title = "Our Collection";
 const desc = `Introducing our coffee collection, a selection of unique coffees
@@ -9,6 +10,8 @@ from different roast types and origins, expertly roasted in small
 batches and shipped fresh weekly`;
 
 const Homepage = () => {
+  const [tab, setTab] = useState("all");
+
   return (
     <>
       <section className="app-container">
@@ -20,8 +23,8 @@ const Homepage = () => {
             <p className="title">{title}</p>
             <p className="description">{desc}</p>
           </section>
-          {/* <section className="filter-buttons"></section> */}
-          <ProductList products={products} />
+          <Filter handleClick={(value) => setTab(value)} tab={tab} />
+          <ProductList products={products} tab={tab} />
         </section>
       </section>
     </>
