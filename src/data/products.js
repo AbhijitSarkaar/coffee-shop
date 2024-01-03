@@ -5,7 +5,7 @@ const products = [
     votes: 65,
     price: 5.2,
     popular: true,
-    path: "cappucino.jpg",
+    path: "images/cappucino.jpg",
     sold_out: false,
   },
   {
@@ -14,7 +14,7 @@ const products = [
     votes: 14,
     price: 3.5,
     popular: true,
-    path: "house-coffee.jpg",
+    path: "images/house-coffee.jpg",
     sold_out: false,
   },
   {
@@ -23,7 +23,7 @@ const products = [
     votes: 55,
     price: 2.5,
     popular: false,
-    path: "espresso.jpg",
+    path: "images/espresso.jpg",
     sold_out: false,
   },
   {
@@ -32,7 +32,7 @@ const products = [
     votes: 23,
     price: 4.5,
     popular: false,
-    path: "coffee-latte.jpg",
+    path: "images/coffee-latte.jpg",
     sold_out: false,
   },
   {
@@ -41,7 +41,7 @@ const products = [
     votes: 122,
     price: 4,
     popular: false,
-    path: "chocolate-coffee.jpg",
+    path: "images/chocolate-coffee.jpg",
     sold_out: true,
   },
   {
@@ -50,7 +50,7 @@ const products = [
     votes: null,
     price: 5.5,
     popular: false,
-    path: "valentine-special.jpg",
+    path: "images/valentine-special.jpg",
     sold_out: false,
   },
 ];

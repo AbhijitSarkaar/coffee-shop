@@ -11,7 +11,7 @@ module.exports = merge(
       clean: true,
     },
     devServer: {
-      static: ["images"],
+      static: ["assets"],
     },
   },
   config

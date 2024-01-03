@@ -16,7 +16,9 @@ const Product = ({ data }) => {
         <section className="ratings-container">
           <div className="left">
             <div className="star">
-              <img src={data.rating ? "star_fill.svg" : "star.svg"} />
+              <img
+                src={data.rating ? "images/star_fill.svg" : "images/star.svg"}
+              />
             </div>
             {data.rating && (
               <>

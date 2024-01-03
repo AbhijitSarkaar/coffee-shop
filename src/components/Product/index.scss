@@ -3,11 +3,13 @@
     width: 75%;
     .image-container {
       position: relative;
+      height: 180px;
+      background-color: white;
       img {
         height: 180px;
         width: 100%;
         display: block;
-        border-radius: 20px;
+        object-fit: cover;
       }
       .tag {
         position: absolute;
