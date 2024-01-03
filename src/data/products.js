@@ -18,15 +18,6 @@ const products = [
     sold_out: false,
   },
   {
-    title: "Chocolate Coffee",
-    rating: 4.65,
-    votes: 122,
-    price: 4,
-    popular: false,
-    path: "images/chocolate-coffee.jpg",
-    sold_out: true,
-  },
-  {
     title: "Espresso",
     rating: 4.9,
     votes: 55,
@@ -43,6 +34,15 @@ const products = [
     popular: false,
     path: "images/coffee-latte.jpg",
     sold_out: false,
+  },
+  {
+    title: "Chocolate Coffee",
+    rating: 4.65,
+    votes: 122,
+    price: 4,
+    popular: false,
+    path: "images/chocolate-coffee.jpg",
+    sold_out: true,
   },
   {
     title: "Valentine Special",

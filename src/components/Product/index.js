@@ -2,6 +2,8 @@ import React from "react";
 import "./index.scss";
 
 const Product = ({ data }) => {
+  const productPrice = (price) => (Math.round(price * 100) / 100).toFixed(2);
+
   return (
     <>
       <section className="product">
@@ -11,7 +13,7 @@ const Product = ({ data }) => {
         </section>
         <section className="title-price-container">
           <div className="title">{data.title}</div>
-          <div className="price">${data.price}</div>
+          <div className="price">${productPrice(data.price)}</div>
         </section>
         <section className="ratings-container">
           <div className="left">
