@@ -6,12 +6,13 @@ module.exports = merge(
   {
     mode: "development",
     output: {
-      path: path.resolve(__dirname, "build"),
+      path: path.resolve(__dirname, "dist", "build"),
       filename: "bundle.js",
+      publicPath: "/build",
       clean: true,
     },
     devServer: {
-      static: ["assets"],
+      static: ["dist"],
     },
   },
   config

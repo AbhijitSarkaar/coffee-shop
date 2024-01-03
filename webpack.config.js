@@ -23,7 +23,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackplugin({
       template: "./src/template.html",
-      filename: "index.html",
+      filename: path.join(__dirname, "dist", "index.html"),
     }),
   ],
   resolve: {
